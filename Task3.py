@@ -43,4 +43,16 @@ def unique_numbers(numbers):
             unique.append(number)
     return unique
 
-print(unique_numbers(numbers))       
+print(unique_numbers(numbers))   
+
+#5 Дан текстовый файл, содержащий целые числа. Удалить из него все четные числа. 
+
+my_list = [1,2,3,4,5,6,7,8,9,12,14,16,20,45]
+my_file = open ('a.txt', 'w')
+for element in my_list:
+    if element % 2 == 0:
+        continue
+    my_file.write(str(element))
+    my_file.write('  ')
+my_file.close    
+#
